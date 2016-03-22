@@ -40,7 +40,7 @@ int main()
 
 	int relaxed = 0;
 	int ilosc_drog = 4;
-	for(int droga = 1; droga < ilosc_drog; droga++)
+	for(int droga = 1; droga < ilosc_drog; droga++)   	//temperature is changed from 210K to 110K and back times defined by ilosc_drog
 	{
 
 		
