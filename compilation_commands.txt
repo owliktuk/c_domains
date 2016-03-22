@@ -1,0 +1,1 @@
+g++ -c -O2 -o MagneticLayer.o MagneticLayer/MagneticLayer.cpp;  g++ -c -O2 -o FerroelasticSubstrate.o FerroelasticSubstrate/FerroelasticSubstrate.cpp; g++ -c -O2 -o MAIN.o MAIN.cpp; g++  -O2 -o program MAIN.o FerroelasticSubstrate.o MagneticLayer.o; ./program;
