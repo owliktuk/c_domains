@@ -29,13 +29,11 @@ int main()
 	
 	std::ofstream plik;	
 	
-	//MagneticLayer(CellsNumber, Lenght, Thickness, ExchangeConstant, AnisotropyConstant1, 
-	//AnisotropyConstant2, MagnetoelasticConstant1, MagnetoelasticConstant2, 
-	//Elastic11, Elastic12, Elastic44, SatMagnetization);
+	//parameters for Ni75Fe15
 	MagneticLayer ML = MagneticLayer(100, 1E-8, 5E-9, 13E-12, -3694, -0.23E4, 1.24E6, 1.24E6, 2.495E11, 1.1209E11, 0.68705E11, 1.005);
 	MagneticLayer new_ML = MagneticLayer(100, 1E-8, 5E-9, 13E-12, -3694, -0.23E4, 1.24E6, 1.24E6, 2.495E11, 1.1209E11, 0.68705E11, 1.005);
 
-	//FerroelasticSubstrate(CellsNumber, DomainSize, Temperature, crystalID);
+	//LCS divided to two domains of equal size
 	FerroelasticSubstrate FS = FerroelasticSubstrate(100, 50, T, 2);
 
 	int relaxed = 0;
